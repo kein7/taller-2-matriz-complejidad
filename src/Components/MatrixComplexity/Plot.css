@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+}
+
+.boxMatrix {
+  background-color: rgb(212, 212, 212);
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  border: 1px solid #000;
+  padding: 2px;
+  text-align: center;
+  width: 40px;
+}
+
+.cellVerticalMidLeft {
+  flex: 1;
+  border: 1px solid #000;
+  border-right: 1px solid #e40000;
+  padding: 2px;
+  text-align: center;
+  width: 40px;
+}
+
+.cellVerticalMidRight {
+  flex: 1;
+  border: 1px solid #000;
+  border-left: 1px solid #e40000;
+  padding: 2px;
+  text-align: center;
+  width: 40px;
+}
+
+.cellHorizontalMidBottom {
+  flex: 1;
+  border: 1px solid #000;
+  border-top: 1px solid #e40000;
+  padding: 2px;
+  text-align: center;
+  width: 40px;
+}
+
+.cellHorizontalMidTop {
+  flex: 1;
+  border: 1px solid #000;
+  border-bottom: 1px solid #e40000;
+  padding: 2px;
+  text-align: center;
+  width: 40px;
+}
+
+.cellMidLeftTop {
+  flex: 1;
+  border: 1px solid #000;
+  border-bottom: 1px solid #e40000;
+  border-right: 1px solid #e40000;
+  padding: 2px;
+  text-align: center;
+  width: 40px;
+}
+
+.cellMidLeftBottom {
+  flex: 1;
+  border: 1px solid #000;
+  border-top: 1px solid #e40000;
+  border-right: 1px solid #e40000;
+  padding: 2px;
+  text-align: center;
+  width: 40px;
+}
+
+.cellMidRightTop {
+  flex: 1;
+  border: 1px solid #000;
+  border-bottom: 1px solid #e40000;
+  border-left: 1px solid #e40000;
+  padding: 2px;
+  text-align: center;
+  width: 40px;
+}
+
+.cellMidRightBottom {
+  flex: 1;
+  border: 1px solid #000;
+  border-top: 1px solid #e40000;
+  border-left: 1px solid #e40000;
+  padding: 2px;
+  text-align: center;
+  width: 40px;
+}
+
+.verticalText {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  color: #f8f8f8;
+  height: 5px;
+  margin-top: 350px;
+  margin-left: -100px;
+}
+
+.horizontalText {
+  position: relative;
+}
