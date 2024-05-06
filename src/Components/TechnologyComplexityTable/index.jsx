@@ -139,19 +139,19 @@ export const TechnologyComplexityTable = ({setTotalValue})=>{
                         <td>Nivel de integración de las distintas plataformas, actualmente</td>
                         <td>
                             <label>
-                                <input type="radio" name="personal" onClick={() => handleSelection(setIntegrationLevel, 1)} />
+                                <input type="radio" name="integrationLevel" onClick={() => handleSelection(setIntegrationLevel, 1)} />
                                 Integradas
                             </label>
                         </td>
                         <td>
                             <label>
-                                <input type="radio" name="personal" onClick={() => handleSelection(setIntegrationLevel, 2)} />
+                                <input type="radio" name="integrationLevel" onClick={() => handleSelection(setIntegrationLevel, 2)} />
                                 Medianamente integradas
                             </label>
                         </td>
                         <td>
                             <label>
-                                <input type="radio" name="personal" onClick={() => handleSelection(setIntegrationLevel, 3)} />
+                                <input type="radio" name="integrationLevel" onClick={() => handleSelection(setIntegrationLevel, 3)} />
                                 Sin integración
                             </label>
                         </td>
