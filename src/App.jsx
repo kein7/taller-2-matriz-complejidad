@@ -17,7 +17,10 @@ function App() {
       <h3>Complejidad Tecnológica</h3>
       <TechnologyComplexityTable setTotalValue={setTotalTechnologyComplexity} />
       <h5>Complejidad Tecnológica Total: {totalTechnologyComplexity}</h5>
-      <Plot></Plot>
+      <Plot
+        totalBusinessComplexity={totalBusinessComplexity}
+        totalTechnologyComplexity={totalTechnologyComplexity}
+      ></Plot>
       <p className="horizon">Complejidad de negocio</p>
     </>
   )

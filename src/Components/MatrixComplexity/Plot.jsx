@@ -1,48 +1,41 @@
 import './Plot.css'
 
-export default function Plot() {
+export default function Plot(props) {
+  const { totalBusinessComplexity, totalTechnologyComplexity } = props
   const rows = []
-  for (let i = 0; i < 20; i++) {
+  for (let i = 21; i >= 1; i--) {
     const cells = []
-    for (let j = 0; j < 24; j++) {
-      if (j === 11) {
-        if (i === 9) {
-          cells.push(
-            <div key={j} className="cellMidLeftTop">{`${i},${j}`}</div>
-          )
-        } else if (i === 10) {
-          cells.push(
-            <div key={j} className="cellMidLeftBottom">{`${i},${j}`}</div>
-          )
+    for (let j = 1; j < 25; j++) {
+      if (j === 12) {
+        if (i === 10) {
+          cells.push(<div key={j} className="cellMidLeftBottom"></div>)
+        } else if (i === 11) {
+          cells.push(<div key={j} className="cellMidLeftTop"></div>)
         } else {
-          cells.push(
-            <div key={j} className="cellVerticalMidLeft">{`${i},${j}`}</div>
-          )
+          cells.push(<div key={j} className="cellVerticalMidLeft"></div>)
         }
-      } else if (j === 12) {
-        if (i === 9) {
-          cells.push(
-            <div key={j} className="cellMidRightTop">{`${i},${j}`}</div>
-          )
-        } else if (i === 10) {
-          cells.push(
-            <div key={j} className="cellMidRightBottom">{`${i},${j}`}</div>
-          )
+      } else if (j === 13) {
+        if (i === 10) {
+          cells.push(<div key={j} className="cellMidRightBottom"></div>)
+        } else if (i === 11) {
+          cells.push(<div key={j} className="cellMidRightTop"></div>)
         } else {
-          cells.push(
-            <div key={j} className="cellVerticalMidRight">{`${i},${j}`}</div>
-          )
+          cells.push(<div key={j} className="cellVerticalMidRight"></div>)
         }
-      } else if (i === 9) {
-        cells.push(
-          <div key={j} className="cellHorizontalMidTop">{`${i},${j}`}</div>
-        )
       } else if (i === 10) {
-        cells.push(
-          <div key={j} className="cellHorizontalMidBottom">{`${i},${j}`}</div>
-        )
+        cells.push(<div key={j} className="cellHorizontalMidBottom"></div>)
+      } else if (i === 11) {
+        cells.push(<div key={j} className="cellHorizontalMidTop"></div>)
       } else {
-        cells.push(<div key={j} className="cell">{`${i},${j}`}</div>)
+        cells.push(<div key={j} className="cell"></div>)
+      }
+      if (i === totalTechnologyComplexity && j === totalBusinessComplexity) {
+        cells.pop()
+        cells.push(
+          <div key={j} className="cell">
+            <div className="cellDot"></div>
+          </div>
+        )
       }
     }
     rows.push(
@@ -55,25 +48,8 @@ export default function Plot() {
   return (
     <div className="container">
       <p className="verticalText">Complejidad tecnologica</p>
-      <div className="boxMatrix">
-        {/*<div className="item">
-          <div></div>
-          <p>Complejidad tecnologica alta</p>
-        </div>
-        <div className="item">
-          <div></div>
-          <p>Complejidad Alta</p>
-        </div>
-        <div className="item">
-          <div></div>
-          <p>Rutina</p>
-        </div>
-        <div className="item">
-          <div></div>
-          <p>Alta complejidad de negocio</p>
-        </div>*/}
-        {rows}
-      </div>
+      <div className="boxMatrix">{rows}</div>
+      {console.log(totalBusinessComplexity, totalTechnologyComplexity)}
     </div>
   )
 }
