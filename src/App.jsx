@@ -27,7 +27,7 @@ function App() {
       <TechnologyComplexityTable setTotalValue={setTotalTechnologyComplexity} />
       <h5>Complejidad Tecnológica Total: {totalTechnologyComplexity < 11 ? "Baja" : totalTechnologyComplexity < 17 ? "Media" : "Alta"}</h5>
 
-      <h3>Complejidad Final: {getMaxComplexity(totalBusinessComplexity, totalTechnologyComplexity)}</h3>
+      <h3>Complejidad del proyecto: {getMaxComplexity(totalBusinessComplexity, totalTechnologyComplexity)}</h3>
       
       <Plot
         totalBusinessComplexity={totalBusinessComplexity}
