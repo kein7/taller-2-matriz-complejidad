@@ -3,6 +3,23 @@
 }
 
 .boxMatrix {
+  margin-left: 9rem;
+}
+
+.verticalText {
+  position: absolute;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  color: #f8f8f8;
+  margin-top: 18rem;
+  margin-left: 2rem;
+}
+
+.horizontalText {
+  position: relative;
+  color: #f8f8f8;
+  right: 24rem;
+  top: 35rem;
 }
 
 .row {
@@ -13,10 +30,9 @@
   flex: 1;
   border-radius: 100%;
   background-color: #e40000;
-  margin: 2px;
   text-align: center;
-  width: 35px;
-  height: 35px;
+  width: 15px;
+  height: 15px;
 }
 
 .cell {
@@ -24,8 +40,8 @@
   border: 1px solid #000;
   padding: 2px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .cellVerticalMidLeft {
@@ -34,8 +50,8 @@
   border-right: 1px solid #e40000;
   padding: 2px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .cellVerticalMidRight {
@@ -44,8 +60,8 @@
   border-left: 1px solid #e40000;
   padding: 2px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .cellHorizontalMidBottom {
@@ -54,8 +70,8 @@
   border-top: 1px solid #e40000;
   padding: 2px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .cellHorizontalMidTop {
@@ -64,8 +80,8 @@
   border-bottom: 1px solid #e40000;
   padding: 2px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .cellMidLeftTop {
@@ -75,8 +91,8 @@
   border-right: 1px solid #e40000;
   padding: 2px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .cellMidLeftBottom {
@@ -86,8 +102,8 @@
   border-right: 1px solid #e40000;
   padding: 2px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .cellMidRightTop {
@@ -97,8 +113,8 @@
   border-left: 1px solid #e40000;
   padding: 2px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .cellMidRightBottom {
@@ -108,19 +124,6 @@
   border-left: 1px solid #e40000;
   padding: 2px;
   text-align: center;
-  width: 40px;
-  height: 40px;
-}
-
-.verticalText {
-  transform: rotate(-90deg);
-  white-space: nowrap;
-  color: #f8f8f8;
-  height: 5px;
-  margin-top: 350px;
-  margin-left: -100px;
-}
-
-.horizontalText {
-  position: relative;
+  width: 20px;
+  height: 20px;
 }

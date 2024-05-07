@@ -50,6 +50,7 @@ export default function Plot(props) {
       <p className="verticalText">Complejidad tecnologica</p>
       <div className="boxMatrix">{rows}</div>
       {console.log(totalBusinessComplexity, totalTechnologyComplexity)}
+      <p className="horizontalText">Complejidad de negocio</p>
     </div>
   )
 }
