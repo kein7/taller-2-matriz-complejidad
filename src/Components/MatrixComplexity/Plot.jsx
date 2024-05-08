@@ -3,28 +3,28 @@ import './Plot.css'
 export default function Plot(props) {
   const { totalBusinessComplexity, totalTechnologyComplexity } = props
   const rows = []
-  for (let i = 21; i >= 1; i--) {
+  for (let i = 21; i >= 7; i--) {
     const cells = []
-    for (let j = 1; j < 25; j++) {
-      if (j === 12) {
-        if (i === 10) {
+    for (let j = 8; j < 26; j++) {
+      if (j === 16) {
+        if (i === 13) {
           cells.push(<div key={j} className="cellMidLeftBottom"></div>)
-        } else if (i === 11) {
+        } else if (i === 14) {
           cells.push(<div key={j} className="cellMidLeftTop"></div>)
         } else {
           cells.push(<div key={j} className="cellVerticalMidLeft"></div>)
         }
-      } else if (j === 13) {
-        if (i === 10) {
+      } else if (j === 17) {
+        if (i === 13) {
           cells.push(<div key={j} className="cellMidRightBottom"></div>)
-        } else if (i === 11) {
+        } else if (i === 14) {
           cells.push(<div key={j} className="cellMidRightTop"></div>)
         } else {
           cells.push(<div key={j} className="cellVerticalMidRight"></div>)
         }
-      } else if (i === 10) {
+      } else if (i === 13) {
         cells.push(<div key={j} className="cellHorizontalMidBottom"></div>)
-      } else if (i === 11) {
+      } else if (i === 14) {
         cells.push(<div key={j} className="cellHorizontalMidTop"></div>)
       } else {
         cells.push(<div key={j} className="cell"></div>)
